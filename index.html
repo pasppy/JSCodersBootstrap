@@ -1,321 +1,381 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>JS Coders | A fun way of learning JavaScript</title>
-    <style>
-      @media only screen and (max-width: 992px){
-        .btn-1{
-          margin-top: 16px;
-    margin-bottom: 9px;
-    margin-left: -14px;
-    margin-right: 25px;
-        }
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+  <title>JS Coders | A fun way of learning JavaScript</title>
+  <style>
+    @media only screen and (max-width: 992px) {
+      .btn-1 {
+        margin-top: 16px;
+        margin-bottom: 9px;
+        margin-left: -14px;
+        margin-right: 25px;
       }
-        .carousel-inner img{
-            opacity: 0.7;}
-       .carousel-caption{
-           color: black;
-           font-weight: bold;
-       }
-       .text-muted {
-    color: #ffffff!important;
-}
-hr{
-  margin-left: 4rem !important;
-  margin-right: 4rem !important;
-}
+    }
 
-    </style>
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="/JSCodersBootstrap/">JSCoders</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/JSCodersBootstrap/">Home</a>
+    .carousel-inner img {
+      opacity: 0.7;
+    }
+
+    .carousel-caption {
+      color: black;
+      font-weight: bold;
+    }
+
+    .text-muted {
+      color: #ffffff !important;
+    }
+
+    hr {
+      margin-left: 4rem !important;
+      margin-right: 4rem !important;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/JSCodersBootstrap/">JSCoders</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/JSCodersBootstrap/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/JSCodersBootstrap/about.html">About</a>
+          </li>
+
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Topics
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="/JSCodersBootstrap/">JS Basics</a></li>
+              <li><a class="dropdown-item" href="/JSCodersBootstrap/">JS Advanced</a></li>
+              <li>
+                <hr class="dropdown-divider">
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/JSCodersBootstrap/about.html">About</a>
-              </li>
-              
-              
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Topics
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="/JSCodersBootstrap/">JS Basics</a></li>
-                  <li><a class="dropdown-item" href="/JSCodersBootstrap/">JS Advanced</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="/JSCodersBootstrap/">Support</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/JSCodersBootstrap/contact us.html">Contact Us</a>
-              </li>
-              
+              <li><a class="dropdown-item" href="/JSCodersBootstrap/">Support</a></li>
             </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-primary" type="submit">Search</button>
-            </form>
-            <div class="mx-3">
-              <button class="btn btn-danger btn-1" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
-              <button class="btn btn-danger btn-1" data-bs-toggle="modal" data-bs-target="#signupModal">SignUp</button>
-            </div>
-          </div>
-        </div>
-      </nav>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/JSCodersBootstrap/contact us.html">Contact Us</a>
+          </li>
 
-<!-- Login Modal -->
-<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Login to JSCoders</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <form>
-          <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-          </div>
-          <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1">
-          </div>
-          <div class="mb-3 form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">Are you a member</label>
-          </div>
-          <button type="submit" class="btn btn-primary">Login</button>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-primary" type="submit">Search</button>
         </form>
+        <div class="mx-3">
+          <button class="btn btn-danger btn-1" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+          <button class="btn btn-danger btn-1" data-bs-toggle="modal" data-bs-target="#signupModal">SignUp</button>
+        </div>
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <!-- <button type="button" class="btn btn-primary">Login</button> -->
+    </div>
+  </nav>
+
+  <!-- Login Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Login to JSCoders</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Are you a member</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <!-- <button type="button" class="btn btn-primary">Login</button> -->
+        </div>
       </div>
     </div>
   </div>
-</div>
 
 
 
 
-<!--Sign Up Modal -->
-<div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Get your new JScoders Account</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <form>
-          <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-          </div>
-          <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1">
-          </div>
-          <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1">
-          </div>
-          <!-- <div class="mb-3 form-check">
+  <!--Sign Up Modal -->
+  <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Get your new JScoders Account</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <!-- <div class="mb-3 form-check">
             <input type="checkbox" class="form-check-input" id="exampleCheck1">
             <label class="form-check-label" for="exampleCheck1">Check me out</label>
           </div> -->
-          <button type="submit" class="btn btn-primary">Creat an account</button>
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <!-- <button type="button" class="btn btn-primary">SignUp</button> -->
+            <button type="submit" class="btn btn-primary">Creat an account</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <!-- <button type="button" class="btn btn-primary">SignUp</button> -->
+        </div>
       </div>
     </div>
   </div>
-</div>
 
 
-      <main>
-      <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="https://cdn.pixabay.com/photo/2024/05/29/04/52/artificial-intelligence-8795200_1280.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-                <h3>Welcome to JS Blog</h3>
-                <p>Your all in one JS mentor</p>
-                <a class="btn btn-primary" href='#'>JS Blog</a>
-              <a class="btn btn-danger" href='about.html'>JS Tricks</a>
-              <a class="btn btn-success" href='about.html'>Coding Fun</a>
-            </div>
+  <main>
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://cdn.pixabay.com/photo/2024/05/29/04/52/artificial-intelligence-8795200_1280.jpg"
+            class="d-block w-100" style="object-fit: cover; object-position: center; height: 70vh;" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h3>Welcome to JS Blog</h3>
+            <p>Your all in one JS mentor</p>
+            <a class="btn btn-primary" href='#'>JS Blog</a>
+            <a class="btn btn-danger" href='about.html'>JS Tricks</a>
+            <a class="btn btn-success" href='about.html'>Coding Fun</a>
           </div>
-          <div class="carousel-item">
-            <img src="https://cdn.pixabay.com/photo/2016/11/30/20/58/programming-1873854_1280.png" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h3>Best Coding Tutorials Blog</h3>
-              <p>Your all in one JS mentor</p>
-              <button class="btn btn-primary">JS Blog</button>
+        </div>
+        <div class="carousel-item">
+          <img src="https://cdn.pixabay.com/photo/2016/11/30/20/58/programming-1873854_1280.png"
+            style="object-fit: cover; object-position: center; height: 70vh;" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h3>Best Coding Tutorials Blog</h3>
+            <p>Your all in one JS mentor</p>
+            <button class="btn btn-primary">JS Blog</button>
             <button class="btn btn-danger">JS Tricks</button>
             <button class="btn btn-success">Coding Fun</button>
-            </div>
-            
           </div>
-          <div class="carousel-item">
-            <img src="https://cdn.pixabay.com/photo/2015/10/02/15/00/diary-968592_1280.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-                <h3>An Award Winning Blog</h3>
-                <p>Your all in one JS mentor</p>
-                <button class="btn btn-primary">JS Blog</button>
-              <button class="btn btn-danger">JS Tricks</button>
-              <button class="btn btn-success">Coding Fun</button>
+
+        </div>
+        <div class="carousel-item">
+          <img src="https://cdn.pixabay.com/photo/2015/10/02/15/00/diary-968592_1280.jpg"
+            style="object-fit: cover; object-position: center; height: 70vh;" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h3>An Award Winning Blog</h3>
+            <p>Your all in one JS mentor</p>
+            <button class="btn btn-primary">JS Blog</button>
+            <button class="btn btn-danger">JS Tricks</button>
+            <button class="btn btn-success">Coding Fun</button>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="container my-4">
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+            <img class="bd-placeholder-img card-img-top" width="100%" height="225"
+              src="https://cdn.pixabay.com/photo/2014/09/24/14/29/macbook-459196_1280.jpg" aria-label="Placeholder: "
+              preserveAspectRatio="xMidYMid slice" focusable="false">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
+              dy=".3em"></text></img>
+
+            <div class="card-body">
+              <p class="card-text">JavaScript runs on the client side of the web, which can be used to design / program
+                how the web pages behave on the occurrence of an event. </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">1 mins</small>
+              </div>
             </div>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-      <div class="container my-4">
+        <div class="col">
+          <div class="card shadow-sm">
+            <img class="bd-placeholder-img card-img-top" width="100%" height="225"
+              src="https://cdn.pixabay.com/photo/2014/12/30/13/44/programming-583923_1280.jpg"
+              aria-label="Placeholder: " preserveAspectRatio="xMidYMid slice" focusable="false">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
+              dy=".3em"></text></img>
 
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-          <div class="col">
-            <div class="card shadow-sm">
-              <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="https://cdn.pixabay.com/photo/2014/09/24/14/29/macbook-459196_1280.jpg" aria-label="Placeholder: " preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text></img>
-  
-              <div class="card-body">
-                <p class="card-text">JavaScript runs on the client side of the web, which can be used to design / program how the web pages behave on the occurrence of an event. </p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                  </div>
-                  <small class="text-muted">1 mins</small>
+            <div class="card-body">
+              <p class="card-text">To open the Web Console (Ctrl+Shift+I on Windows and Linux or Cmd-Option-K on Mac),
+                open the Tools menu in Firefox, and select "Developer ▶ Web Console". </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
                 </div>
+                <small class="text-muted">3 mins</small>
               </div>
             </div>
           </div>
-          <div class="col">
-            <div class="card shadow-sm">
-              <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="https://cdn.pixabay.com/photo/2014/12/30/13/44/programming-583923_1280.jpg" aria-label="Placeholder: " preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text></img>
-  
-              <div class="card-body">
-                <p class="card-text">To open the Web Console (Ctrl+Shift+I on Windows and Linux or Cmd-Option-K on Mac), open the Tools menu in Firefox, and select "Developer ▶ Web Console". </p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                  </div>
-                  <small class="text-muted">3 mins</small>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card shadow-sm">
-              <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="https://cdn.pixabay.com/photo/2016/02/01/19/49/laptop-1174314_1280.jpg" aria-label="Placeholder: " preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text></img>
-  
-              <div class="card-body">
-                <p class="card-text">Objects are created programmatically in JavaScript, by attaching methods and properties to otherwise empty objects at run time, </p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                  </div>
-                  <small class="text-muted">4 mins</small>
-                </div>
-              </div>
-            </div>
-          </div>
-  
-          <div class="col">
-            <div class="card shadow-sm">
-              <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="https://cdn.pixabay.com/photo/2019/09/27/07/57/music-4507817_1280.jpg" aria-label="Placeholder: " preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text></img>
-  
-              <div class="card-body">
-                <p class="card-text">JavaScript® is a trademark or registered trademark of Oracle in the U.S. and other countries.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                  </div>
-                  <small class="text-muted">4 mins</small>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card shadow-sm">
-              <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="https://cdn.pixabay.com/photo/2018/08/23/10/52/code-3625646_1280.jpg" aria-label="Placeholder: " preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text></img>
-  
-              <div class="card-body">
-                <p class="card-text">If you are new to JavaScript, start with the articles in the learning area and the JavaScript Guide.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                  </div>
-                  <small class="text-muted">5 mins</small>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card shadow-sm">
-              <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="https://cdn.pixabay.com/photo/2021/08/04/13/06/software-developer-6521720_960_720.jpg" aria-label="Placeholder:  preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text></img>
-  
-              <div class="card-body">
-                <p class="card-text">The Web Console tool built into Firefox is useful for experimenting with JavaScript; you can use it into two modes: </p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                  </div>
-                  <small class="text-muted">9 mins</small>
-                </div>
-              </div>
-            </div>
-          </div>
-        </main><hr>
-        <footer class="container">
-          <p class="float-end"><a href="#">Back to top</a></p>
-          <p>Copyright © 2030 Nayedul Alam Inc · <a href="#">Privacy</a> · <a href="#">Terms</a> ·</p> 
-        </footer>
-          
-    <!-- Optional JavaScript; choose one of the two! -->
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img class="bd-placeholder-img card-img-top" width="100%" height="225"
+              src="https://cdn.pixabay.com/photo/2016/02/01/19/49/laptop-1174314_1280.jpg" aria-label="Placeholder: "
+              preserveAspectRatio="xMidYMid slice" focusable="false">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
+              dy=".3em"></text></img>
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+            <div class="card-body">
+              <p class="card-text">Objects are created programmatically in JavaScript, by attaching methods and
+                properties to otherwise empty objects at run time, </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">4 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-   
-  </body>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img class="bd-placeholder-img card-img-top" width="100%" height="225"
+              src="https://cdn.pixabay.com/photo/2019/09/27/07/57/music-4507817_1280.jpg" aria-label="Placeholder: "
+              preserveAspectRatio="xMidYMid slice" focusable="false">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
+              dy=".3em"></text></img>
+
+            <div class="card-body">
+              <p class="card-text">JavaScript® is a trademark or registered trademark of Oracle in the U.S. and other
+                countries.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">4 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img class="bd-placeholder-img card-img-top" width="100%" height="225"
+              src="https://cdn.pixabay.com/photo/2018/08/23/10/52/code-3625646_1280.jpg" aria-label="Placeholder: "
+              preserveAspectRatio="xMidYMid slice" focusable="false">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
+              dy=".3em"></text></img>
+
+            <div class="card-body">
+              <p class="card-text">If you are new to JavaScript, start with the articles in the learning area and the
+                JavaScript Guide.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">5 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img class="bd-placeholder-img card-img-top" width="100%" height="225"
+              src="https://cdn.pixabay.com/photo/2021/08/04/13/06/software-developer-6521720_960_720.jpg"
+              aria-label="Placeholder:  preserveAspectRatio=" xMidYMid slice" focusable="false">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
+              dy=".3em"></text></img>
+
+            <div class="card-body">
+              <p class="card-text">The Web Console tool built into Firefox is useful for experimenting with JavaScript;
+                you can use it into two modes: </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+  </main>
+  <hr>
+  <footer class="container">
+    <p class="float-end"><a href="#">Back to top</a></p>
+    <p>Copyright © 2030 Nayedul Alam Inc · <a href="#">Privacy</a> · <a href="#">Terms</a> ·</p>
+  </footer>
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+
+</body>
+
 </html>
